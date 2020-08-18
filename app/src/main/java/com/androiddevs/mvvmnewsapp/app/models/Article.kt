@@ -6,7 +6,7 @@ import androidx.room.PrimaryKey
 @Entity(tableName = "articles")
 data class Article(
     @PrimaryKey(autoGenerate = true)
-    var id : Int? = null, //nullable because not all articles are saved into local db
+    var id: Int? = null, //nullable because not all articles are saved into local db
     val author: String,
     val content: String,
     val description: String,
@@ -14,5 +14,5 @@ data class Article(
     val source: Source,
     val title: String,
     val url: String,
-    val urlToImage: Any
+    val urlToImage: String
 )
